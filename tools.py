@@ -2,6 +2,24 @@ from langchain_community.tools import WikipediaQueryRun, DuckDuckGoSearchRun
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain.tools import Tool
 from datetime import datetime
+from openai import OpenAI
+
+
+#TODO: Returns a list of the spending categories that already exist in the sheet
+def check_categories():
+    pass
+
+determine_category_tool = Tool(
+    name="determine_category",
+    func = check_categories(),
+    description="Determine the distinct spending category for a purchase, keeping in mind the currently existing categories"
+)
+
+#TODO: write purchase into google sheet
+def input_purchase():
+    
+
+
 
 def save_to_txt(data: str, filename: str = "research_output.txt"):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
