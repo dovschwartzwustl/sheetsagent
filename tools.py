@@ -17,8 +17,7 @@ determine_category_tool = Tool(
 
 #TODO: write purchase into google sheet
 def input_purchase():
-    
-
+    pass
 
 
 def save_to_txt(data: str, filename: str = "research_output.txt"):
