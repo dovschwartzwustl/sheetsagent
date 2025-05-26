@@ -6,3 +6,6 @@ langchain-anthropic
 python-dotenv
 pydantic
 duckduckgo-search
+google-api-python-client
+google_auth_oauthlib
+google-auth-httplib2
